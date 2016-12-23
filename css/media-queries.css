@@ -1,0 +1,69 @@
+@media screen and (max-width:757px) {
+    .main {
+        width: 100%;
+        margin:0;        
+        border:none;
+        box-shadow:none !important;
+    }
+    
+    .content {
+        background:white;
+        overflow-x: hidden;
+    }
+
+    #print {
+        display:none;
+    }
+
+    #dados-pessoais p {
+        text-align: left;
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 400px) {    
+    .curriculo-data-exp-prof-header {
+        font-size:12pt;
+        font-weight: 600;
+    }
+
+    .curriculo-data-exp-prof-header a {
+        font-weight: normal !important;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .curriculo-data-sessao p {
+        font-size: 0.9em;
+        margin-left:8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .curriculo-data-nome {
+        font-size: 28pt;        
+    }
+}
+
+@media print {
+    .content {
+        overflow-y: hidden;               
+    }
+
+    a:not(#linkedin) {
+        visibility: hidden;
+    }
+
+    .curriculo-data-competencia {
+        width:300px;
+        word-break: keep-all;
+    }
+
+    .curriculo-data-nome {
+        font-size:38pt;
+    }
+
+    /*.curriculo-data-nome + .sub-section {
+        font-size:10pt !important;
+    }*/
+}

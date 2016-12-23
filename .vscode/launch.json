@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [        
+        {
+            "name": "Launch Chrome against localhost, with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:8082/curriculo-web/index.php",
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}"
+         } ,
+        {
+            "name": "Attach to Chrome, with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "port": 8082,
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}"
+        }
+    ]
+}

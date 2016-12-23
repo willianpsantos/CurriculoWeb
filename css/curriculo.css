@@ -1,0 +1,305 @@
+html, body {
+    font-family: 'ClanPro-Book','HelveticaNeue-Light','Helvetica Neue Light',Helvetica,Arial,sans-serif,'FontAwesome';
+    margin:0;
+    padding: 0;
+    width:100%;
+    height: 100%;
+    z-index:1;  
+    overflow:hidden;  
+}
+
+.back-dark-blue {
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(top,  #1e5799 49%, #1e5799 100%, #272cce 100%, #207cca 100%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #1e5799 49%,#1e5799 100%,#272cce 100%,#207cca 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #1e5799 49%,#1e5799 100%,#272cce 100%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+.back-really-dark-blue {
+    background: #3f4c6b; /* Old browsers */
+    background: -moz-linear-gradient(top,  #3f4c6b 0%, #3f4c6b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #3f4c6b 0%,#3f4c6b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #3f4c6b 0%,#3f4c6b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+}
+
+.back-light-blue {
+    background: #499bea; /* Old browsers */
+    background: -moz-linear-gradient(top,  #499bea 0%, #207ce5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #499bea 0%,#207ce5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #499bea 0%,#207ce5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ); /* IE6-9 */
+}
+
+.back-white {
+    background: white;
+}
+
+.back-gray {
+    background-color: #e1e1e1;
+}
+
+.back-gray-transparent {
+    background-color: #e1e1e1;
+    opacity: 0.7;
+}
+
+.font-white {
+    color:white;
+}
+
+.top {
+    width: 100%;
+    height: 50px;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 11;
+}
+
+.navicon {
+    float:left;
+    clear:right;    
+    font-size:24pt;
+    width:40px;
+    height: 100%;
+    margin:0; 
+}
+
+.navicon > i {
+   margin-top:10px;
+   margin-left:5px; 
+}
+
+.content {
+    box-sizing: border-box;
+    margin:0;
+    width:100%;
+    border:1px solid black;
+    position:relative;
+    z-index:9;
+    padding-top:50px;
+    margin-top:0;
+    overflow:auto;
+}
+
+.sidebar {
+    width: 300px;
+    float:left;
+    margin:0;    
+    position:absolute;
+    z-index:10;
+    top:49px;
+}
+
+.sidebar > ul {
+    padding:0;
+}
+
+.sidebar > ul > li {
+    list-style: none;
+    color:white;
+    font-weight: 700;
+    padding:10px;
+    margin:0;   
+    cursor: pointer; 
+}
+
+.separator {
+    border: 0.12em solid #d8d8d8;
+    width: 100%;
+    height:0;
+    margin:5px 0;
+    padding:0;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 2px 0px 8px -1px rgba(0,0,0,0.75);
+       -moz-box-shadow: 2px 0px 8px -1px rgba(0,0,0,0.75);
+            box-shadow: 2px 0px 8px -1px rgba(0,0,0,0.75);
+}
+
+.footer {
+    position:absolute;
+    height: 50px;
+    width: 100%;
+    margin:0;
+    left:0;
+    bottom:0;
+    z-index:11;
+}
+
+.footer > button {
+    float:right;        
+    margin:2px 5px;
+}
+
+.main {
+    background-color:white;
+    width: 80%;
+    margin: 0 auto;    
+    padding-top:30px;
+}
+
+.sub-section {
+    color:#afb2b5;    
+}
+
+.center-align {
+    text-align:center;
+}
+
+.curriculo-data-nome {
+    text-align: center;
+    font-size:45pt;    
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.curriculo-data-nome + .sub-section {
+    margin:0;
+    font-size:15pt;
+    margin-bottom: 65px;
+}
+
+.curriculo-data-titulo-sessao {
+    font-size:20pt;
+    border-bottom: 1px solid #7C8780;    
+    margin-bottom:10px;
+}
+
+.curriculo-data-sessao {
+    margin: 10px;
+    margin-bottom: 55px;       
+    display: table;
+    width:98%;
+    box-sizing: content-box;
+}
+
+.curriculo-data-sessao p {
+    margin-left:35px;
+    text-align: justify;
+    margin-right:35px;
+}
+
+.curriculo-data-competencia {
+    border-radius: 3px 3px 3px 3px;
+    background-color: #f0f0f0;    
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding:3px 8px;
+    margin:5px 5px 10px 15px;
+    float:left;
+    clear:right;        
+}
+.curriculo-data-exp-prof {
+    display: table;
+    margin:5px auto;
+    box-sizing:border-box;
+    width: 100%;
+    padding: 5px;
+    margin-bottom:10px;
+    border-bottom: 1px outset #ddd;
+}
+
+.curriculo-data-sessao > .curriculo-data-exp-prof:last-of-type {    
+    border-bottom:none;
+}
+
+.curriculo-data-exp-prof-endorse {
+    display:table-cell;
+    float:left;
+    clear:right;
+    width:55px;
+    margin:0;
+    padding:5px;
+    text-align: center;
+}
+
+.curriculo-data-exp-prof-content {
+    display:table-cell;
+    float:left;
+    margin:0;
+    padding:5px;
+    width: 90%;
+}
+
+.curriculo-data-exp-prof-content p {
+    margin: 1px !important;
+}
+
+.curriculo-data-exp-prof-header {
+    font-size:15pt;
+}
+
+.curriculo-data-exp-prof-header a{
+    font-size:10pt !important;
+}
+
+.curriculo-data-exp-prof-sub-header {    
+    font-size:12pt;
+    margin:0;
+    margin-top:-5px;
+}
+
+.curriculo-data-exp-prof-sub-header p {
+    margin: 10px !important;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;        
+            user-select: none;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #1d9d74;
+    border-color: #198764;
+}
+
+.language-buttons-container {
+    float:right;
+    height:100%;
+    margin:0;
+    padding:0;
+    border-left:1px outset #3f4c6b;
+}
+
+.language-buttons-container > button {
+    height: 100%;
+    margin: 1px;    
+    border:none;
+}
+
+.break-page {
+    page-break-after: always;
+    page-break-inside: avoid;
+}
