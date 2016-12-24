@@ -33,6 +33,11 @@
                 'en-US' : 'Print'
             };
 
+            var _developedByDescription = {
+                'pt-BR' : 'Desenvolvido por <br> Willian Pereira dos Santos',
+                'en-US' : 'Developed by <br> Willian Pereira dos Santos'
+            }
+
             var _printUrl = 'print.php';
 
             var that = this;
@@ -62,6 +67,17 @@
                             '</section>'+
 
                             '<footer class="footer back-white box-shadow">'+
+                            '    <div class="logo-container"> ' +
+                            '        <div class="logo-letter-w-royal">&nbsp;</div>' +
+                            '        <div class="logo-letter-p-royal">&nbsp;</div>' +
+                            '        <div class="logo-letter-s-royal">&nbsp;</div>' +
+                            '    </div> ' +
+
+                            '    <span id="developed-by" class="sub-section" style="font-size:9pt; display:inline-block; margin-top:10px; margin-left:5px;"> '+ 
+                            '       Desenvolvido por <br> ' +
+                            '       Willian Pereira dos Santos  ' +
+                            '    </span> ' +
+
                             '    <button id="print" class="btn btn-lg btn-success"> ' +
                             '        <i class="fa fa-print"></i> &nbsp; ' + 
                             '        <span id="description">Imprimir</span> ' + 
@@ -90,6 +106,12 @@
                 var btn = that.find('.footer #print #description');
                 var desc = _printBtnDescription[language];
                 btn.text(desc);
+            };
+
+            var _refreshDevelopedByDescription = function(language){
+                var span = that.find('.footer #developed-by');
+                var desc = _developedByDescription[language];
+                span.html(desc);
             };
 
             var _print = function(e){
@@ -259,6 +281,7 @@
                         menu.refreshItems(items);
 
                         _refreshPrintBtnDescription(lang);
+                        _refreshDevelopedByDescription(lang);
 
                         $(this).siblings().removeClass('back-really-dark-blue');
                         $(this).addClass('back-really-dark-blue');

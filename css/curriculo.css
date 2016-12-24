@@ -303,3 +303,53 @@ html, body {
     page-break-after: always;
     page-break-inside: avoid;
 }
+
+.logo-container {    
+    margin:0;
+    padding: 10px 5px 5px 5px;
+    display: block;
+    height:120px;
+    float:left;
+    clear: right;
+    border-right: 1px solid #e1e1e1;
+}
+
+.logo-container > [class^=logo-letter][class$=pixel] {
+    margin:5px;
+    width:100px;
+    height: 120px;
+    float:left;
+}
+
+.logo-container > [class^=logo-letter][class$=royal] {
+    margin: 2px;
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+
+.logo-letter-w-pixel {
+    background: url('../img/letras-pixel.jpg') no-repeat -618px -560px;    
+}
+
+.logo-letter-p-pixel {
+    background: url('../img/letras-pixel.jpg') no-repeat -885px -298px;    
+}
+
+.logo-letter-s-pixel {
+    background: url('../img/letras-pixel.jpg') no-repeat -715px -430px;
+}
+
+
+.logo-letter-w-royal {
+    background: url('../img/letras-royalty.jpg') no-repeat -189px -147px;    
+}
+
+.logo-letter-p-royal {
+    background: url('../img/letras-royalty.jpg') no-repeat -157px -110px;    
+}
+
+.logo-letter-s-royal {
+    background: url('../img/letras-royalty.jpg') no-repeat -63px -148px;    
+}
