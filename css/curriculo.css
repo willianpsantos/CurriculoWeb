@@ -353,3 +353,7 @@ html, body {
 .logo-letter-s-royal {
     background: url('../img/letras-royalty.jpg') no-repeat -63px -148px;    
 }
+
+#site {
+    visibility: hidden;
+}

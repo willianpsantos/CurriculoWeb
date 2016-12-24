@@ -60,8 +60,11 @@
         ?> <br>
 
         <i class="fa fa-envelope"></i> &nbsp; E-mail: <?= $dados->email ?> <br>
-        <i class="fa fa-linkedin-square" style="color:blue;"></i> 
-        &nbsp; LinkedIn: <a id="linkedin" href="<?= $dados->linkedIn ?>" target="_blank"> <?= $titulos['linkedin'] ?> </a>
+        <i class="fa fa-linkedin-square" style="color:blue;"></i> &nbsp; LinkedIn: <a id="linkedin" href="<?= $dados->linkedIn ?>" target="_blank"> <?= $titulos['linkedin'] ?> </a> <br>
+        
+        <span id="site"> 
+            <i class="fa fa-link"></i> &nbsp; Site: <a id="site" href="<?= $_GLOBAL_ROOT_URL ?>" target="_blank"> <?= $_GLOBAL_ROOT_URL ?> </a> 
+        </span>
     </p>
 </section>
 

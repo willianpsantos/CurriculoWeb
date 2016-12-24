@@ -66,4 +66,8 @@
     /*.curriculo-data-nome + .sub-section {
         font-size:10pt !important;
     }*/
+
+    #site {
+        visibility: visible;
+    }
 }
